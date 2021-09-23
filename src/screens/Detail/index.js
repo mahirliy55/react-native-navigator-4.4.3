@@ -20,6 +20,10 @@ export default class Detail extends Component {
     super();
   }
 
+  componentDidMount(){
+    alert(this.props.navigation.getParam("name"))
+  }
+
   render() {
     return (
       <SafeAreaView>
